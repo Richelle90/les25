@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- verplichte metatags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device=width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style/main.css">
+<title>Les 25</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button").click(function(){
+    $("#div1").fadeOut("slow");
+    $("#div2").fadeOut(500);
+    $("#div3").fadeOut(5000);
+  });
+});
+</script>
+</head>
+<body>
+  <p>Klik op de button hieronder om de tekst te laten verdwijnen op verschillende manieren</p>
+  <br>
+  <button id="button">Klik hier!</button>
+  <br><br>
+  <div id="div1" style="color: pink">FadeOut langzaam</div><br>
+    <div id="div2" style="color: blue">FadeOut 500</div><br>
+      <div id="div3" style= "color: green">FadeOut 5000</div><br>
+<footer>
+</footer>
+</body>
+</html>
